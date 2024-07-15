@@ -1,34 +1,66 @@
-import React,{useState} from 'react'
-import './Navbar.css'
-import { assets } from '../../assets/assets'
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
+import { assets } from "../../assets/assets";
 
 const Navbar = () => {
-
   const [menu, setMenu] = useState("Menu");
 
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
 
+  const toggleTheme = () => {
+    setIsDarkTheme(!isDarkTheme);
+    document.body.classList.toggle("dark-theme", !isDarkTheme);
+  };
 
   return (
-    <div className='navbar'>
-          <img src={assets.logo} alt="" className='logo' />
-          <ul className="navbar-menu">
-              <li onClick={()=>setMenu("Home")} className={menu==="Home" ? "active" : ""}>Home</li>
-              <li onClick={()=>setMenu("Menu")} className={menu==="Menu" ? "active" : ""}>Menu</li>
-              <li onClick={()=>setMenu("Mobile-App")} className={menu==="Mobile-App" ? "active" : ""}>Mobile-App</li>
-              <li onClick={()=>setMenu("Contact Us")} className={menu==="Contact Us" ? "active" : ""}>Contact Us</li>
-          </ul>
+    <div className="navbar">
+      <img src={assets.logo} alt="" className="logo" />
+      <ul className="navbar-menu">
+        <li
+          onClick={() => setMenu("Home")}
+          className={menu === "Home" ? "active" : ""}
+        >
+          <Link to="/">Home</Link>
+        </li>
 
-          <div className="navbar-right">
-              <img src={assets.search_icon} alt="" />
-              <div className="navbar-search-icon">
-                  <img src={assets.basket_icon} alt="" />
-                  <div className="dot"></div>
-              </div>
-              <button>Sign In</button>
-          </div>
+        <li
+          onClick={() => setMenu("Categories")}
+          className={menu === "Categories" ? "active" : ""}
+        >
+          <a href="#explore-menu">Categories</a>
+        </li>
+
+        <li
+          onClick={() => setMenu("About Us")}
+          className={menu === "About Us" ? "active" : ""}
+        >
+          <Link to="/about">About Us</Link>
+        </li>
+
+        <li
+          onClick={() => setMenu("Contact")}
+          className={menu === "Contact" ? "active" : ""}
+        >
+          <Link to="/contact">Contact</Link>
+        </li>
+      </ul>
+
+      <div className="navbar-right">
+        <img src={assets.search_icon} alt="" />
+
+        <div className="navbar-search-icon">
+          <img src={assets.basket_icon} alt="" />
+          <div className="dot"></div>
+        </div>
+
+
+        <button onClick={toggleTheme}>
+          {isDarkTheme ? "Light Theme" : "Dark Theme"}
+        </button>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
-
+export default Navbar;

@@ -1,0 +1,18 @@
+.welcome-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.name-input{
+    margin-top: 20px;
+    padding: 5px;
+}
+.name-input{
+    padding: 10px;
+   border-radius: 50px;
+   border-color: rgb(0, 0, 0);
+   background-color: rgb(255, 255, 255);
+   width: 300px;
+}

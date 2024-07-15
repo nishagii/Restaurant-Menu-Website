@@ -2,13 +2,13 @@
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center;  
 }
 
 .navbar .logo{
     width: 150px;
 }
+
 .navbar-menu{
     display: flex;
     list-style: none;
@@ -17,6 +17,7 @@
     font-size: 18px;
     cursor: pointer;
 }
+
 .navbar-right{
     display: flex;
     align-items: center;

@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "./components/navbar/navbar";
+import Navbar from "./components/navbar/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import Cart from "./pages/Cart/Cart";
-import Placeorder from "./pages/Placeorder/Placeorder";
+import About from "./pages/About/About";
+import Contact from "./pages/Contact/Contact";
 
 const App = () => {
   return (
@@ -11,8 +11,8 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/order" element={<Placeorder />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
   );
