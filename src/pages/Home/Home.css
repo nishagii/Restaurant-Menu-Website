@@ -1,18 +1,40 @@
-.welcome-message{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* Container for the welcome message */
+.welcome-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh; 
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+/* Style for the welcome message heading */
+.welcome-message h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Style for the input field */
+.name-input {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #24ff00;
+  border-radius: 50px;
+  outline: none;
+  background-color: transparent;
+}
+
+.name-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.clock{
+  color: white;
+  margin-top: 10px;
     text-align: center;
-}
-.name-input{
-    margin-top: 20px;
-    padding: 5px;
-}
-.name-input{
-    padding: 10px;
-   border-radius: 50px;
-   border-color: rgb(0, 0, 0);
-   background-color: rgb(255, 255, 255);
-   width: 300px;
 }

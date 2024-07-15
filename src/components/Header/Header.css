@@ -1,10 +1,18 @@
 .header{
     height: 34vw;
-    margin: 30px auto;
-    background: url('/header_img.png') no-repeat;
-    background-size: contain;
+    margin: 20px auto;
+    background-size:cover;
     position: relative;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 rgba(255, 255, 0, 0.1);
+    transition: all 0.35s ease;
+   
 }
+.header:hover{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
 .header .header-contents{
     position: absolute;
     display: flex;
@@ -26,13 +34,14 @@
 .header-contents p{
     color: white;
     font-size: 1.2vw;
+    background-color: rgb(0, 0, 0,);
 }
 
 .header-contents button{
     padding: 10px 30px;
     font-weight: 500;
     background: transparent;
-    border: 2px solid white;
+    border: 2px solid #24ff00;
     border-radius: 50px;
     color:white;
     font-size: 1.2vw;
@@ -41,5 +50,5 @@
 }
 .header-contents button:hover{
     background: white;
-    color: tomato;
+    color: #24ff00;
 }
