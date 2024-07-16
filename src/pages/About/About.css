@@ -8,13 +8,12 @@
 
 .aboutus {
   color: #ffffff;
-  background-color: #0a4c134f;
+  background-color: #032e0770;
   padding: 20px;
   border: none;
   border-radius: 30px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 rgba(255, 255, 0, 0.1);
-transition: all 0.35s ease;
+  transition: all 0.35s ease;
 }
 
 .aboutus:hover {
@@ -28,11 +27,12 @@ transition: all 0.35s ease;
 
 .aboutus p {
   margin-bottom: 0;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 .halla h1 {
   grid-column: 1 / -1; /* Make the title span across all columns */
   text-align: center;
   margin-bottom: 20px;
+  color: #ffffff;
 }

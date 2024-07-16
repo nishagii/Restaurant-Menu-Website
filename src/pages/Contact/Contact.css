@@ -4,15 +4,28 @@
   align-items: flex-start;
   padding: 20px;
   gap: 20px;
-  background-color: rgb(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.401);
   margin-top: 70px;
   border-radius: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 rgba(255, 255, 0, 0.1);
+  transition: all 0.35s ease;
 }
+
+.forms h1{
+  color: white;
+}
+
+.forms:hover {
+   box-shadow: none; 
+  transform: translateY(5px); 
+}
+
 
 .form-labels {
   flex: 1;
   max-width: 400px;
   margin-top: 20px;
+  color: #24ff00;
 }
 
 .form-labels label {
@@ -25,7 +38,7 @@
   padding: 10px;
   margin-top: 5px;
   margin-bottom: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid #00ff00a1;
   border-radius: 10px;
 }
 
@@ -35,7 +48,7 @@
   max-width: 400px;
   font-size: 16px;
   line-height: 1.5;
-  color: #000000;
+  color: #ffffff;
 }
 
 .details a {
@@ -65,7 +78,7 @@
 }
 button[type="submit"] {
   background-color: #24ff00; /* Green background */
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 10px 20px;
   border: none;
   cursor: pointer;

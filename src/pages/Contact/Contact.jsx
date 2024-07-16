@@ -40,7 +40,9 @@ const Contact = () => {
     };
 
     return (
+        
         <div className="forms">
+            <h1>Contact Us</h1>
             <form action="" className="form-labels">
                 <label htmlFor="name">Enter your name : </label>
                 <br />
