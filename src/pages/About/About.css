@@ -4,15 +4,16 @@
   grid-template-rows: repeat(2, auto);
   gap: 20px;
   padding: 30px;
+  margin-top: 60px;
 }
 
 .aboutus {
   color: #ffffff;
-  background-color: #032e0770;
+  background-color: #00000070;
   padding: 20px;
   border: none;
-  border-radius: 30px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 rgba(255, 255, 0, 0.1);
+  border-radius: 40px;
+  box-shadow: 0 4px 8px 0 rgba(255, 249, 138, 0.554), 0 0 rgba(255, 255, 86, 0.713);
   transition: all 0.35s ease;
 }
 

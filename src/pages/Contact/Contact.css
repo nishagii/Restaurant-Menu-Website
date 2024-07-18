@@ -7,7 +7,7 @@
   background-color: rgba(0, 0, 0, 0.401);
   margin-top: 70px;
   border-radius: 50px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 rgba(255, 255, 0, 0.1);
+  box-shadow: 0 4px 8px 0px rgba(255, 153, 0, 0.414), 0 0 rgba(255, 255, 86, 0.713);
   transition: all 0.35s ease;
 }
 
@@ -25,7 +25,7 @@
   flex: 1;
   max-width: 400px;
   margin-top: 20px;
-  color: #24ff00;
+  color: var(--form-font);
 }
 
 .form-labels label {
@@ -38,7 +38,7 @@
   padding: 10px;
   margin-top: 5px;
   margin-bottom: 15px;
-  border: 1px solid #00ff00a1;
+  border: 1px solid var(--form-box-color);
   border-radius: 10px;
 }
 
@@ -72,13 +72,13 @@
   }
 }
 .error {
-  color: red;
+  color:#24ff00;
   font-size: 0.875rem; /* Adjust font size as needed */
   margin-top: 4px;
 }
 button[type="submit"] {
-  background-color: #24ff00; /* Green background */
-  color: rgb(0, 0, 0);
+  background-color: var(--button-hover-color);
+  color: rgb(255, 255, 255);
   padding: 10px 20px;
   border: none;
   cursor: pointer;

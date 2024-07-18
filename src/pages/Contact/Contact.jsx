@@ -84,15 +84,14 @@ const Contact = () => {
                 />
                 <br />
                 <br />
-                <label htmlFor="contactNumber">Enter toy details : </label>
+                <label htmlFor="toydetails">Enter toy details : </label>
                 <br />
                 <input
                     className="box"
                     type='text'
-                    id="contactNumber"
+                    id="toy-details"
                     placeholder="Description"
-                    value={contactNumber}
-                    onChange={handleContactNumberChange}
+                 
                 />
                 <br />
                 <br />

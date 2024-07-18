@@ -7,7 +7,7 @@ const Header = () => {
           <div className="header-contents">
               <h1>Order your favourite toys here . . .</h1>
               <p className='para'>Discover a world of wonder! Our carefully curated collection includes timeless classics and the latest innovations, from enchanting dolls and action figures.Spark joy and inspire endless hours of play. Visit us and let the adventure begin!</p>
-              <button>View Menu</button>
+              <button>View Items</button>
           </div>
     </div>
   )

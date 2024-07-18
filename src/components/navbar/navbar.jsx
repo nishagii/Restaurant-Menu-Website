@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { assets } from "../../assets/assets";
@@ -9,9 +9,17 @@ const Navbar = () => {
 
   const toggleTheme = () => {
     setIsDarkTheme(!isDarkTheme);
-    // Toggle dark theme class on the body element
-    document.body.classList.toggle("dark-theme", isDarkTheme);
+    document.body.classList.toggle("dark-theme", !isDarkTheme);
   };
+
+  useEffect(() => {
+    // Apply the theme class on initial load based on the isDarkTheme state
+    if (isDarkTheme) {
+      document.body.classList.add("dark-theme");
+    } else {
+      document.body.classList.remove("dark-theme");
+    }
+  }, [isDarkTheme]);
 
   return (
     <div className={`navbar ${isDarkTheme ? "dark" : ""}`}>

@@ -1,8 +1,8 @@
 import basket_icon from './basket_icon.png'
-import logo from './2.png'
+import logo from './hal.png'
 import header_img from './header_img.png'
 import search_icon from './search_icon.png'
-import menu_1 from './menu_1.png'
+import menu_1 from './anna2.jpg'
 import menu_2 from './menu_2.png'
 import menu_3 from './menu_3.png'
 import menu_4 from './menu_4.png'
@@ -100,11 +100,11 @@ export const menu_list = [
         menu_image: menu_4
     },
     {
-        menu_name: "Building Blocks",
+        menu_name: "Blocks",
         menu_image: menu_5
     },
     {
-        menu_name: "Action ",
+        menu_name: "Figures",
         menu_image: menu_6
     },
     {
@@ -112,7 +112,7 @@ export const menu_list = [
         menu_image: menu_7
     },
     {
-        menu_name: "Noodles",
+        menu_name: "Legos",
         menu_image: menu_8
     }]
 
