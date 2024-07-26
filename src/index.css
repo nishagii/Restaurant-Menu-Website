@@ -17,9 +17,12 @@ body {
    --yataira:#8f67fa;
    --dot:#8f67fa;
    --font:#8f67fa;
-   --form-font:white;
+   --form-font:#ff5100;
    --form-box-color:#f2ff5ea6;
    --dot:rgb(255, 255, 0);
+   --footer:#8f67fa;
+    --item-name:#6932ff;
+     --button-background-img:url("./assets/db.jpeg");
 } 
 
 /* Dark theme */
@@ -33,6 +36,9 @@ body.dark-theme {
   --form-font:#24ff00;
   --form-box-color:#ff7e42ba;
   --dot:#ff5100;
+  --footer:#ff5100;
+  --item-name:white;
+  --button-background-img:url("./assets/lb.jpeg");
 }
 
 body {
@@ -42,6 +48,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
 
 }
 

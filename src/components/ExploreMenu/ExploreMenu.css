@@ -72,4 +72,9 @@
 }
 .menu-list-items .item-name{
     color:var(--item-name);
+    font-weight: 500;
+}
+
+.explore-menu-text{
+        font-weight: bold;
 }

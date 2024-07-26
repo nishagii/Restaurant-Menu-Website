@@ -4,6 +4,7 @@ import "./Navbar.css";
 import { assets } from "../../assets/assets";
 
 const Navbar = () => {
+   
   const [menu, setMenu] = useState("Menu");
   const [isDarkTheme, setIsDarkTheme] = useState(false);
 
@@ -49,9 +50,13 @@ const Navbar = () => {
           <div className="dot"></div>
         </div>
 
-        <button onClick={toggleTheme} className="theme-toggle">
-          {isDarkTheme ? "Light Theme" : "Dark Theme"}
-        </button>
+        <img
+          src={isDarkTheme ? assets.light_img : assets.dark_img}
+          alt="Theme toggle"
+          className="theme-toggle-icon"
+          onClick={toggleTheme}
+        />
+
       </div>
     </div>
   );

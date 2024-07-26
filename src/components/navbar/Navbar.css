@@ -65,7 +65,7 @@ body {
 
 .navbar button {
   padding: 10px 30px;
-  background: transparent;
+  background-image: var(--button-background-img); /* Default button background */
   border: 2px solid var(--button-border-color); /* Default button border color */
   border-radius: 50px;
   color:inherit ; /* Use inherited text color */
@@ -100,3 +100,11 @@ body {
   top: -8px;
   right: -8px;
 }
+
+.theme-toggle-icon {
+  cursor: pointer;
+  width: 70px;
+  height: 60px;
+  margin-right: 50px;
+}
+
